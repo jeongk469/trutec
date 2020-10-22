@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Header from './Headercomponent';
-
-
+import Home from './Homecomponent';
+import Footer from './Footercomponent';
 
 
 class Main extends Component {
@@ -11,13 +11,33 @@ class Main extends Component {
   
     render() {
   
-   
+        const HomePage = () => {
+            return(
+                <Home 
+                />
+            );
+          }  
   
   
       return (
+        
+        <div>
+        <div>
+        <Header />
+        <div>
+              <Switch>
+              <Route path='/home' component={HomePage} />
+                  {/* <Route exact path='/aboutus' component={AboutPage}/> 
+                  <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+                  <Route path='/menu/:dishId' component={DishWithId} />
+                  <Route exact path='/contactus' component={ContactPage}/> */}
+              <Redirect to="/home" />
+              </Switch>
   
-          <Header />
-       
+        </div>
+        <Footer />
+      </div>
+      </div>
       );
     }
   }
