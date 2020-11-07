@@ -5,7 +5,6 @@
 }
 
 
-
 .row-content {
   margin:0px auto;
   padding: 50px 0px 50px 0px;
@@ -18,6 +17,24 @@ hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #219cff;
+
+}
+
+hr.divider2 {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #219cff;
+  margin: 0;
+  
+}
+
+.contact-elem {
+  text-align: start;
+}
+
+.contact-adjust{
+  padding-bottom: 0% !important;
+  margin-bottom: 0% !important;
 }
 
 .foot-down{
@@ -72,7 +89,20 @@ address{
 
 
 
+.form-border{
 
+  
+  border: 1px solid #666666;
+  border-color: #219cff;
+}
+
+.btn--blue{
+  background: #4272d7;
+  border-radius: 10px;
+  line-height: 40px;
+  font-weight:bold;
+  width: 25%;
+}
 
 
 @media (max-width: 992px) {
@@ -134,7 +164,7 @@ address{
 
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(57, 57, 58, 0.466) 0%, rgba(165, 165, 170, 0.63) 100%), url("test5.jpg");
+  background: linear-gradient(to bottom, rgba(57, 57, 58, 0.466) 0%, rgba(165, 165, 170, 0.63) 100%), url("images/jumbo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -168,7 +198,43 @@ address{
   }
 }
 
+.jumbotron-sm {
 
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(57, 57, 58, 0.466) 0%, rgba(165, 165, 170, 0.63) 100%), url("images/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-radius: 0;
+  margin-bottom: 0;
+
+}
+
+
+.jumbotron-sm h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  .jumbotron-sm {
+    height: 27rem;
+    min-height: 25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  .jumbotron-sm p {
+    font-size: 1.15rem;
+  }
+  .jumbotron-sm h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .jumbotron-sm h1 {
+    font-size: 3.5rem;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/

@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Header from './Headercomponent';
 import Home from './Homecomponent';
 import Footer from './Footercomponent';
+import Contact from './Contactcomponent';
 
 
 class Main extends Component {
@@ -16,7 +17,14 @@ class Main extends Component {
                 <Home 
                 />
             );
-          }  
+          } 
+        
+        const ContactPage = () => {
+          return(
+              <Contact 
+              />
+          );
+        } 
   
   
       return (
@@ -27,6 +35,7 @@ class Main extends Component {
         <div>
               <Switch>
               <Route path='/home' component={HomePage} />
+              <Route path='/contact' component = {ContactPage} />
                   {/* <Route exact path='/aboutus' component={AboutPage}/> 
                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
                   <Route path='/menu/:dishId' component={DishWithId} />
