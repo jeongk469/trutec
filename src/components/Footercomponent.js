@@ -17,15 +17,15 @@ function Footer(props) {
                 <div className="col-12 col-sm-6 text-center">
                     <h4 className="bot-copy">Address</h4>
                     <address className="bot-copy">
-                      6970 Aragon Cir Suite 4<br />
-		              Buena Park, CA 90620<br />
+                      555 W Lambert Rd Suite B<br />
+		              Brea, CA 92821<br />
                     </address>
                 </div>
             </div>
 
             <div className="row justify-content-center">             
                 <div className="col-12 col-sm-6 text-center bot-copy">
-                    <p className="bot-copy">Copyright © 2018 TRUTEC ENGINEERING INC - All Rights Reserved.</p>
+                    <p className="bot-copy">Copyright © 2021 TRUTEC ENGINEERING INC - All Rights Reserved.</p>
                 </div>
             </div>
         </div>

@@ -39,19 +39,19 @@ class Contact extends Component {
     
         
         <React.Fragment>
-    
+            
             <div class = "jumbotron-sm">
               <div class="container h-100">
                   <div class="row h-100 align-self-center text-center d-flex align-items-center">
                       <div class="col-lg-12">
-                          <h1 class="text-white font-weight-bold">Contact Us</h1>
+                          <h1 class="text-white">Contact Us</h1>
                           
                       </div>
                   </div>
               </div>
             </div>
 
-            <section class="section-title" id="contact">
+            <section class="section-title services" id="contact">
             <div class="container">
                 <div class="row justify-content-start">
                     <div class="col-lg-8">
@@ -74,7 +74,7 @@ class Contact extends Component {
                     
                     <div className="col-12 col-md-9">
                     <LocalForm  className = "form-border"onSubmit={(values) => this.handleSubmit(values)}>
-                            <Row className="form-group mt-5">
+                            <Row className="form-group ml-2 mr-2 mt-5">
                                 <Label className = "offset-md-1" htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={8}>
                                     <Control.text model=".firstname" id="firstname" name="firstname"
@@ -96,7 +96,7 @@ class Contact extends Component {
                                      />
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            <Row className="form-group ml-2 mr-2">
                                 <Label className = "offset-md-1" htmlFor="lastname" md={2}>Last Name</Label>
                                 <Col md={8}>
                                     <Control.text model=".lastname" id="lastname" name="lastname"
@@ -118,7 +118,7 @@ class Contact extends Component {
                                      />
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            <Row className="form-group ml-2 mr-2 ">
                                 <Label className = "offset-md-1" htmlFor="telnum" md={2}>Contact Tel.</Label>
                                 <Col md={8}>
                                     <Control.text model=".telnum" id="telnum" name="telnum"
@@ -141,7 +141,7 @@ class Contact extends Component {
                                      />
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            <Row className="form-group ml-2 mr-2">
                                 <Label  className = "offset-md-1" htmlFor="email" md={2}>Email</Label>
                                 <Col md={8}>
                                     <Control.text model=".email" id="email" name="email"
@@ -163,7 +163,7 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             
-                            <Row className="form-group mb-4  ">
+                            <Row className="form-group ml-2 mr-2 mb-4  ">
                                 <Label className = "offset-md-1" htmlFor="message" md={2}>Message</Label>
                                 <Col md={8}>
                                     <Control.textarea model=".message" id="message" name="message"
@@ -176,6 +176,7 @@ class Contact extends Component {
                                     <Button className = "btn--blue" type="submit" color="primary">
                                     Submit
                                     </Button>
+                               
                                
                             </Row>
                         </LocalForm>

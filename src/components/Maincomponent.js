@@ -4,17 +4,28 @@ import Header from './Headercomponent';
 import Home from './Homecomponent';
 import Footer from './Footercomponent';
 import Contact from './Contactcomponent';
+import Testimonial from './Testimonialcomponent';
+import About from './Aboutcomponent';
+import Project from './Projectscomponent';
+import {clientLogos} from '../shared/client';
 
 
 class Main extends Component {
 
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      logos: clientLogos 
+
+    };
+  }
   
     render() {
   
         const HomePage = () => {
             return(
-                <Home 
+                <Home logos= {this.state.logos}
                 />
             );
           } 
@@ -25,6 +36,30 @@ class Main extends Component {
               />
           );
         } 
+
+        const TestimonialPage = () => {
+
+          return(
+            <Testimonial logos= {this.state.logos}/>
+          )
+
+        }
+
+        const aboutPage = () => {
+
+          return(
+            <About/>
+          )
+
+        }
+
+        const projectPage = () => {
+
+          return(
+            <Project/>
+          )
+
+        }
   
   
       return (
@@ -36,6 +71,9 @@ class Main extends Component {
               <Switch>
               <Route path='/home' component={HomePage} />
               <Route path='/contact' component = {ContactPage} />
+              <Route path='/testimonial' component = {TestimonialPage} />
+              <Route path='/about' component={aboutPage}/> 
+              <Route path='/project' component={projectPage}/>
                   {/* <Route exact path='/aboutus' component={AboutPage}/> 
                   <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
                   <Route path='/menu/:dishId' component={DishWithId} />
