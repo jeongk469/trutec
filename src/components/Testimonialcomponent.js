@@ -24,7 +24,7 @@ import { Card, CardImg, CardText, CardBody,
               <div class='frame'>
               
               <span class="helper"></span>
-              <img class ='img_logo' src={item}/>
+              <img class ='img_logo' src={item.src}/>
               {/* <CardBody>
               <CardTitle>{item.title}</CardTitle>
               {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }

@@ -8,14 +8,14 @@ import { Navbar, NavbarBrand, NavLink, NavbarToggler, Collapse, NavItem, Jumbotr
 function Home(props) {
 
 
-  const card_detail = props.logos.slice(0,4).map((item) => 
+  const card_detail = props.logos.map((item) => 
 
         <div class ="col-4 col-sm-3 col-md-3 ">
             
               <div class='frame'>
               
               <span class="helper"></span>
-              <img class ='img_logo' src={item}/>
+              <img class ='img_logo' src={item.src}/>
               {/* <CardBody>
               <CardTitle>{item.title}</CardTitle>
               {item.designation ? <CardSubtitle>{item.designation}</CardSubtitle> : null }
@@ -40,7 +40,7 @@ function Home(props) {
           <div class="container h-100">
               <div class="row h-100 align-items-start justify-content-start text-left">
                   <div class="col-lg-10 align-self-end">
-                      <h1 class="text-uppercase text-white font-weight-bold">Liscensed General Contractor in Orange County</h1>
+                      <h1 class="text-uppercase text-white font-weight-bold">Liscensed General Contractor in California</h1>
                       
                   </div>
                   <div class="col-lg-8 align-self-baseline">
@@ -58,29 +58,23 @@ function Home(props) {
 
         <div class="row" data-aos="zoom-in">
 
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
-            <img src="assets/images/badge.png" class="img-fluid" alt=""/>
+          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+            <img src="assets/images/ca_logo.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
             <img src="assets/images/dv.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
             <img src="assets/images/sdvosb.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
             <img src="assets/images/badge.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
-            <img src="assets/images/dv.png" class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-2 col-4 d-flex align-items-center justify-content-center">
-            <img src="assets/images/sdvosb.png" class="img-fluid" alt=""/>
-          </div>
+     
 
           
          
@@ -119,25 +113,50 @@ function Home(props) {
                 <div class="col-6 col-md-3 mt-3">
                     <div class="why-us rounded"><i class="fa fa-check-circle fa-3x"></i>
                         <h3 class="mt-3">General Contracting</h3>
-                        <p class="mt-3">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br/><br/></p>
+                          <ul class="mt-3">
+                            <li><i class="bx bx-check"></i> General Building & Engineering</li>
+                            <li><i class="bx bx-check"></i> HVAC / Electrical / Plumbing</li>
+                            <li><i class="bx bx-check"></i> Roofing Contract</li>
+                            <li><i class="bx bx-check"></i> Concrete / Paving / Demolition</li>
+                            <li><i class="bx bx-check"></i> Other Specialty Trades</li>
+                          </ul>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-3">
                     <div class="why-us rounded"><i class="fa fa-check-circle fa-3x"></i>
                         <h3 class="mt-3">Electrical Contracting</h3>
-                        <p class="mt-3">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br/><br/></p>
+                        <ul class="mt-3">
+                            <li><i class="bx bx-check"></i> UPS / Generator Installation</li>
+                            <li><i class="bx bx-check"></i> Lighting & Lighting Control</li>
+                            <li><i class="bx bx-check"></i> Underground Electrical</li>
+                            <li><i class="bx bx-check"></i> Conduit & Wiring</li>
+                            <li><i class="bx bx-check"></i> Electrical panel & Transformer</li>
+                          </ul>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-3">
                     <div class="why-us rounded"><i class="fa fa-check-circle fa-3x"></i>
                         <h3 class="mt-3">Project Management & Controls</h3>
-                        <p class="mt-3">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br/><br/></p>
+                        <ul class="mt-3">
+                            <li><i class="bx bx-check"></i> Project Quality Control</li>
+                            <li><i class="bx bx-check"></i> Subcontractors control</li>
+                            <li><i class="bx bx-check"></i> Safety & prevention</li>
+                            <li><i class="bx bx-check"></i> Resolve issues & changes</li>
+                            <li><i class="bx bx-check"></i> Proper communications</li>
+                          </ul>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mt-3">
                     <div class="why-us rounded"><i class="fa fa-check-circle fa-3x"></i>
                         <h3 class="mt-3">Planning & Scheduling & Estimating</h3>
-                        <p class="mt-3">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br/><br/></p>
+
+                        <ul class="mt-3">
+                            <li><i class="bx bx-check"></i> Plan Reviews</li>
+                            <li><i class="bx bx-check"></i> Monitor project progress </li>
+                            <li><i class="bx bx-check"></i> Projection of construction period</li>
+                            <li><i class="bx bx-check"></i> Material & Labor scheduling</li>
+                            <li><i class="bx bx-check"></i> Cost Estimation</li>
+                          </ul>
                     </div>
                 </div>
   
@@ -158,12 +177,12 @@ function Home(props) {
       
           <div class="container">
             <div class="section-title">
-              <h2>Recent Projects</h2>
+              <h2>Projects</h2>
               <hr class="divider my-4" />
               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 
-            <div class="row mt-5">
+            {/* <div class="row mt-5">
               <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                 <div class="icon-box">
                   <div class="icon"><i class="icofont-heart-beat"></i></div>
@@ -187,8 +206,12 @@ function Home(props) {
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
+
+          <div class="row justify-content-center mt-5">
+            <a class="btn btn-outline-dark btn-lg" href="/testimonial">View More</a>
+            </div>
 
           
       </section>

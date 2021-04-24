@@ -25,7 +25,7 @@ class Main extends Component {
   
         const HomePage = () => {
             return(
-                <Home logos= {this.state.logos}
+                <Home logos= {this.state.logos.filter(item => item.mainpage)}
                 />
             );
           } 
