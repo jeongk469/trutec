@@ -10,7 +10,7 @@ function Home(props) {
 
   const card_detail = props.logos.map((item) => 
 
-        <div class ="col-4 col-sm-3 col-md-3 ">
+        <div class ="col-6 ol-sm-3 col-md-3 ">
             
               <div class='frame'>
               
@@ -58,19 +58,19 @@ function Home(props) {
 
         <div class="row" data-aos="zoom-in">
 
-          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
             <img src="assets/images/ca_logo.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
             <img src="assets/images/dv.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
             <img src="assets/images/sdvosb.png" class="img-fluid" alt=""/>
           </div>
 
-          <div class="col-lg-3 col-md-3 col-3 d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
             <img src="assets/images/badge.png" class="img-fluid" alt=""/>
           </div>
 

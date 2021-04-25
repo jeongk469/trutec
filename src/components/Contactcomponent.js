@@ -69,120 +69,124 @@ class Contact extends Component {
 
 
             <div className="container mb-5">
+                
                 <div className="row justify-content-start">
 
-                    
-                    <div className="col-12 col-md-9">
-                    <LocalForm  className = "form-border"onSubmit={(values) => this.handleSubmit(values)}>
-                            <Row className="form-group ml-2 mr-2 mt-5">
-                                <Label className = "offset-md-1" htmlFor="firstname" md={2}>First Name</Label>
-                                <Col md={8}>
-                                    <Control.text model=".firstname" id="firstname" name="firstname"
-                                        placeholder="First Name"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15)
-                                        }}
-                                         />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".firstname"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 characters',
-                                            maxLength: 'Must be 15 characters or less'
-                                        }}
-                                     />
-                                </Col>
-                            </Row>
-                            <Row className="form-group ml-2 mr-2">
-                                <Label className = "offset-md-1" htmlFor="lastname" md={2}>Last Name</Label>
-                                <Col md={8}>
-                                    <Control.text model=".lastname" id="lastname" name="lastname"
-                                        placeholder="Last Name"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15)
-                                        }}
-                                         />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".lastname"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 characters',
-                                            maxLength: 'Must be 15 characters or less'
-                                        }}
-                                     />
-                                </Col>
-                            </Row>
-                            <Row className="form-group ml-2 mr-2 ">
-                                <Label className = "offset-md-1" htmlFor="telnum" md={2}>Contact Tel.</Label>
-                                <Col md={8}>
-                                    <Control.text model=".telnum" id="telnum" name="telnum"
-                                        placeholder="Tel. Number"
-                                        className="form-control"
-                                        validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15), isNumber
-                                        }}
-                                         />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".telnum"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            minLength: 'Must be greater than 2 numbers',
-                                            maxLength: 'Must be 15 numbers or less',
-                                            isNumber: 'Must be a number'
-                                        }}
-                                     />
-                                </Col>
-                            </Row>
-                            <Row className="form-group ml-2 mr-2">
-                                <Label  className = "offset-md-1" htmlFor="email" md={2}>Email</Label>
-                                <Col md={8}>
-                                    <Control.text model=".email" id="email" name="email"
-                                        placeholder="Email"
-                                        className="form-control"
-                                        validators={{
-                                            required, validEmail
-                                        }}
-                                         />
-                                    <Errors
-                                        className="text-danger"
-                                        model=".email"
-                                        show="touched"
-                                        messages={{
-                                            required: 'Required',
-                                            validEmail: 'Invalid Email Address'
-                                        }}
-                                     />
-                                </Col>
-                            </Row>
+                                    
+                <div className="col-12 col-md-9">
+                <LocalForm  className = "form-border" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <input type="hidden" name="oid" value="00D5e000000KUFe"/>
+                    <input type="hidden" name="retURL" value="https://trutec469.web.app"/>
+                {/* <LocalForm  className = "form-border"onSubmit={(values) => this.handleSubmit(values)}></LocalForm> */}
+                        <Row className="form-group ml-2 mr-2 mt-5">
+                            <Label className = "offset-md-1" htmlFor="firstname" md={2}>First Name</Label>
+                            <Col md={8}>
+                                <Control.text model=".firstname" id="first_name" name="first_name"
+                                    placeholder="First Name"
+                                    className="form-control"
+                                    validators={{
+                                        required, minLength: minLength(3), maxLength: maxLength(15)
+                                    }}
+                                    />
+                                <Errors
+                                    className="text-danger"
+                                    model=".firstname"
+                                    show="touched"
+                                    messages={{
+                                        required: 'Required',
+                                        minLength: 'Must be greater than 2 characters',
+                                        maxLength: 'Must be 15 characters or less'
+                                    }}
+                                />
+                            </Col>
+                        </Row>
+                        <Row className="form-group ml-2 mr-2">
+                            <Label className = "offset-md-1" htmlFor="lastname" md={2}>Last Name</Label>
+                            <Col md={8}>
+                                <Control.text model=".lastname" id="last_name" name="last_name"
+                                    placeholder="Last Name"
+                                    className="form-control"
+                                    validators={{
+                                        required, minLength: minLength(3), maxLength: maxLength(15)
+                                    }}
+                                    />
+                                <Errors
+                                    className="text-danger"
+                                    model=".lastname"
+                                    show="touched"
+                                    messages={{
+                                        required: 'Required',
+                                        minLength: 'Must be greater than 2 characters',
+                                        maxLength: 'Must be 15 characters or less'
+                                    }}
+                                />
+                            </Col>
+                        </Row>
+                        <Row className="form-group ml-2 mr-2 ">
+                            <Label className = "offset-md-1" htmlFor="telnum" md={2}>Contact Tel.</Label>
+                            <Col md={8}>
+                                <Control.text model=".telnum" id="phone" name="phone"
+                                    placeholder="Tel. Number"
+                                    className="form-control"
+                                    validators={{
+                                        required, minLength: minLength(3), maxLength: maxLength(15), isNumber
+                                    }}
+                                    />
+                                <Errors
+                                    className="text-danger"
+                                    model=".telnum"
+                                    show="touched"
+                                    messages={{
+                                        required: 'Required',
+                                        minLength: 'Must be greater than 2 numbers',
+                                        maxLength: 'Must be 15 numbers or less',
+                                        isNumber: 'Must be a number'
+                                    }}
+                                />
+                            </Col>
+                        </Row>
+                        <Row className="form-group ml-2 mr-2">
+                            <Label  className = "offset-md-1" htmlFor="email" md={2}>Email</Label>
+                            <Col md={8}>
+                                <Control.text model=".email" id="email" name="email"
+                                    placeholder="Email"
+                                    className="form-control"
+                                    validators={{
+                                        required, validEmail
+                                    }}
+                                    />
+                                <Errors
+                                    className="text-danger"
+                                    model=".email"
+                                    show="touched"
+                                    messages={{
+                                        required: 'Required',
+                                        validEmail: 'Invalid Email Address'
+                                    }}
+                                />
+                            </Col>
+                        </Row>
+                        
+                        <Row className="form-group ml-2 mr-2 mb-4  ">
+                            <Label className = "offset-md-1" htmlFor="message" md={2}>Message</Label>
+                            <Col md={8}>
+                                <Control.textarea model=".message" id="00N5e000004n0Z2" name="00N5e000004n0Z2"
+                                    rows="12"
+                                    className="form-control" />
+                            </Col>
+                        </Row>
+                        <Row className="form-group justify-content-center">
                             
-                            <Row className="form-group ml-2 mr-2 mb-4  ">
-                                <Label className = "offset-md-1" htmlFor="message" md={2}>Message</Label>
-                                <Col md={8}>
-                                    <Control.textarea model=".message" id="message" name="message"
-                                        rows="12"
-                                        className="form-control" />
-                                </Col>
-                            </Row>
-                            <Row className="form-group justify-content-center">
-                                
-                                    <Button className = "btn--blue" type="submit" color="primary">
-                                    Submit
-                                    </Button>
-                               
-                               
-                            </Row>
-                        </LocalForm>
-                    </div>
-               </div>
-               </div>
+                                <Button className = "btn--blue" type="submit" color="primary">
+                                Submit
+                                </Button>
+                        
+                        
+                        </Row>
+                    </LocalForm>
+                </div>
+                </div>
+            </div>
 
 
 
@@ -197,3 +201,5 @@ class Contact extends Component {
   }
   
   export default Contact;
+
+
