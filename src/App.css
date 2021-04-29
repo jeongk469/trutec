@@ -1,34 +1,28 @@
 .rounded {
-
   border-radius: 0.5rem !important;
-
 }
 
-html,body
-{
-  
-    overflow-x: hidden; 
+html,
+body {
+  overflow-x: hidden;
 }
 
-.row-header{
-  margin:0px auto;
-  padding:0px auto;
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
-
 
 .row-content {
-  margin:0px auto;
+  margin: 0px auto;
   padding: 50px 0px 50px 0px;
   border-bottom: 1px ridge;
-  min-height:400px;
+  min-height: 400px;
 }
-
 
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #219cff;
-
 }
 
 hr.divider2 {
@@ -36,96 +30,77 @@ hr.divider2 {
   border-width: 0.2rem;
   border-color: #219cff;
   margin: 0;
-  
 }
 
 .contact-elem {
   text-align: start;
 }
 
-.contact-adjust{
+.contact-adjust {
   padding-bottom: 0% !important;
   margin-bottom: 0% !important;
 }
 
-.foot-down{
-
+.foot-down {
   margin-bottom: 5%;
   margin-top: 5%;
-
 }
 
-.footer{
+.footer {
   background-color: #222222;
-  margin:0px auto;
+  margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
 
-.bot-copy  {
-
-  color:white;
-
+.bot-copy {
+  color: white;
 }
 
-address{
-  font-size:100%;
-  margin:0px;
-  color:#0f0f0f;
+address {
+  font-size: 100%;
+  margin: 0px;
+  color: #0f0f0f;
 }
 
 .navbar-dark {
-  
   transition: 0.5s;
-
 }
 
 .navbar-light {
-
   background-color: white;
   transition: 0.5s;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
-  
-  color:#2c4964;
+  color: #2c4964;
   padding: 0 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.5s;
-
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: black;
 }
 
-
-
-.form-border{
-
-  
+.form-border {
   border: 1px solid #666666;
   border-color: #219cff;
 }
 
-.btn--blue{
+.btn--blue {
   background: #4272d7;
   border-radius: 10px;
   line-height: 40px;
-  font-weight:bold;
+  font-weight: bold;
   width: 25%;
 }
-
 
 @media (max-width: 992px) {
   .navbar-nav .nav-item .nav-link {
     background: white;
     color: black !important;
-
   }
-
-
 }
-
 
 .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
@@ -133,15 +108,11 @@ address{
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.5s;
-
 }
 
 .navbar-nav .nav-item .nav-link:hover {
   color: #fff;
 }
-
-
-
 
 .page-enter {
   opacity: 0.01;
@@ -165,24 +136,25 @@ address{
   transition: all 300ms ease-out;
 }
 
-
 /*--------------------------------------------------------------
 # Jumbotron
 --------------------------------------------------------------*/
 
-
 .jumbotron {
-
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(57, 57, 58, 0.466) 0%, rgba(165, 165, 170, 0.63) 100%), url("images/jumbo.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(57, 57, 58, 0.466) 0%,
+      rgba(165, 165, 170, 0.63) 100%
+    ),
+    url("images/jumbo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   border-radius: 0;
   margin-bottom: 0;
-
 }
 
 .white-bg {
@@ -212,26 +184,27 @@ address{
 }
 
 .jumbotron-sm {
-
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(57, 57, 58, 0.466) 0%, rgba(165, 165, 170, 0.63) 100%), url("images/contact.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(57, 57, 58, 0.466) 0%,
+      rgba(165, 165, 170, 0.63) 100%
+    ),
+    url("images/contact.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   border-radius: 0;
   margin-bottom: 0;
-  
 }
-
 
 .jumbotron-sm h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
   .jumbotron-sm {
-    
     height: 20rem;
     /* min-height: 25rem; */
     padding-top: 4.5rem;
@@ -265,7 +238,7 @@ address{
   height: 64px;
   background: #1977cc;
   border-radius: 5px;
-  transition: all .3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,14 +253,14 @@ address{
 
 .services .icon-box .icon::before {
   position: absolute;
-  content: '';
+  content: "";
   left: -8px;
   top: -8px;
   height: 100%;
   width: 100%;
   background: #badaf7;
   border-radius: 5px;
-  transition: all .3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
 
@@ -324,10 +297,10 @@ address{
   background: #3291e6;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #fff;
 }
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -343,37 +316,27 @@ address{
 
 @media (min-width: 375px) {
   .services {
-    
     padding-top: 10%;
     padding-bottom: 10%;
-   
   }
-
 }
 
 @media (min-width: 700px) {
   .services {
-    
     padding-top: 5%;
     padding-bottom: 5%;
-   
   }
-
 }
-
-
-
 
 .section-title {
   text-align: center;
-  
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-  
+
   position: relative;
   color: #2c4964;
 }
@@ -382,18 +345,14 @@ address{
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
-  
+
   position: relative;
   color: #2c4964;
 }
 
-
 .section-title p {
   margin-bottom: 0;
 }
-
-
-
 
 .testimonial-1 {
   background: #fff;
@@ -401,7 +360,7 @@ address{
   color: #212529;
 }
 
-.testimonial-1 i{
+.testimonial-1 i {
   color: #51565c;
 }
 
@@ -418,46 +377,44 @@ address{
   color: #212529;
 }
 
-.why-uss i{
+.why-uss i {
   color: #219cff;
 }
 
-.why-us i{
+.why-us i {
   color: #219cff;
 }
-
 
 .name {
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: -3px
+  margin-bottom: -3px;
 }
 
 .place {
   font-size: 13px;
-  color: #988c8c
+  color: #988c8c;
 }
 
 .place-2 {
   font-size: 13px;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .testimonial-2 {
   background: blue;
   padding: 14px;
-  color: #fff
+  color: #fff;
 }
 
 .whychoose-1 {
   background: #f3f5fa;
 }
 
-
-
 .card {
   background: #fff;
-  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   margin-bottom: 30px;
   -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
@@ -472,13 +429,14 @@ address{
   -o-transform: scale(1.03);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
-  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38),
+    0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .card .subtitle-black {
   color: #141414;
 }
 .card a {
-  opacity: .85;
+  opacity: 0.85;
 }
 .card:hover .header {
   opacity: 1;
@@ -536,7 +494,7 @@ address{
 }
 
 .card-white {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .card-plain {
@@ -549,8 +507,6 @@ address{
 }
 
 .img_logo {
-  
-
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
@@ -562,14 +518,14 @@ address{
 }
 
 .frame {
-  height: 100%;      /* equals max image height */
+  height: 100%; /* equals max image height */
   width: 100%;
-  
-  white-space: nowrap;
-  
-  text-align: center; margin: 1em 0;
-}
 
+  white-space: nowrap;
+
+  text-align: center;
+  margin: 1em 0;
+}
 
 .cliens {
   padding: 12px 0;
@@ -593,4 +549,11 @@ address{
   .cliens img {
     max-width: 40%;
   }
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 10%;
 }
