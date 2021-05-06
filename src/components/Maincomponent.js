@@ -8,6 +8,7 @@ import Testimonial from "./Testimonialcomponent";
 import About from "./Aboutcomponent";
 import Project from "./Projectscomponent";
 import { clientLogos } from "../shared/client";
+import { projects } from "../shared/projects";
 
 class Main extends Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class Main extends Component {
 
     this.state = {
       logos: clientLogos,
+      Projects: projects,
     };
   }
 
@@ -36,7 +38,7 @@ class Main extends Component {
     };
 
     const projectPage = () => {
-      return <Project />;
+      return <Project projects={this.state.Projects} />;
     };
 
     return (

@@ -37,7 +37,7 @@ class Contact extends Component {
     var element = document.createElement("input");
     element.name = key;
     element.value = value;
-    element.setAttribute("type", "hiddent");
+    element.setAttribute("type", "hidden");
 
     return element;
   }
@@ -67,7 +67,7 @@ class Contact extends Component {
     document.body.appendChild(form);
     form.submit();
 
-    alert("thank you you will be contacted soon~");
+    alert("Thank you! your inquiry has been submitted!");
 
     // open the request with the verb and the url
 
@@ -207,7 +207,7 @@ class Contact extends Component {
                       className="form-control"
                       validators={{
                         required,
-                        minLength: minLength(15),
+                        minLength: minLength(10),
 
                         isNumber,
                       }}

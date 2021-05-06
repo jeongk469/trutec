@@ -8,14 +8,19 @@ function Footer(props) {
         <div className="row justify-content-center foot-down">
           <div className="col-12 col-sm-6 text-center contact-font">
             <h4 className="bot-copy">Contact</h4>
-            <ul className="list-unstyled d-flex flex-column align-item-left">
-              <li className="bot-copy">
+            <p className="bot-copy text-center">
+              <i className="fa fa-phone fa-lg"></i>: (714) 639-9162
+              <br />
+              <i className="fa fa-envelope fa-lg"></i>: Joe.kim@truteceng.com
+            </p>
+            {/* <ul className="list-unstyled d-flex flex-column align-item-left">
+              <li className="bot-copy text-center">
                 <i className="fa fa-phone fa-lg"></i>: (714) 639-9162
               </li>
               <li className="bot-copy">
                 <i className="fa fa-envelope fa-lg"></i>: Joe.kim@truteceng.com
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="col-12 col-sm-6 text-center">
             <h4 className="bot-copy">Address</h4>
