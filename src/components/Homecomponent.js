@@ -45,7 +45,7 @@ function Home(props) {
             </div>
             <div className="col-lg-8 align-self-baseline">
               <p className="text-white-75 font-weight-light mb-5"> </p>
-              <a className="btn btn-light btn-lg" href="#about">
+              <a className="btn btn-light btn-lg" href="/about">
                 Find Out More
               </a>
             </div>
@@ -277,7 +277,7 @@ function Home(props) {
         </div>
 
         <div className="row justify-content-center mt-5">
-          <a className="btn btn-outline-dark btn-lg" href="/testimonial">
+          <a className="btn btn-outline-dark btn-lg" href="/project">
             View More
           </a>
         </div>
