@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-import { Link } from "react-router-dom";
-import { Breadcrumb, BreadcrumbItem, Row, Col } from "reactstrap";
-
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +17,16 @@ class Project extends Component {
 
     return (
       <React.Fragment>
-        <div class="jumbotron-sm">
+        <div
+          class="jumbotron-sm"
+          style={{
+            background: `linear-gradient(
+          to bottom,
+          rgba(57, 57, 58, 0.466) 0%,
+          rgba(165, 165, 170, 0.63) 100%
+        ),url("assets/images/contact.jpg")`,
+          }}
+        >
           <div class="container h-100">
             <div class="row h-100 align-self-center text-center d-flex align-items-center">
               <div class="col-lg-12">
@@ -38,16 +44,9 @@ class Project extends Component {
                   Past Projects
                 </h2>
                 <hr class="divider2 my-4" />
-                {/* <p class="contact-elem">
-                  Trutec Engineering Inc, with 35 years of industry experience,
-                  supports public and private clients by successfully managing
-                  and executing design and construction services for renovation,
-                  new construction and infrastructure improvement projects.
-                  Trutec Engineering Inc currently holds both “A (General
-                  Engineering) and B (General Building)” licenses (Lic # 979233)
-                  which enable to perform construction from beginning to end,
-                  from excavation and paving to building finishes. <br></br>
-                  <br></br>
+              </div>
+              <div class="col-12 mb-3">
+                <p>
                   Trutec Engineering Inc believes that the quality of a project
                   is dependent upon our ability to lead construction process in
                   an appropriate, timely manner with client’s goals. We know
@@ -55,7 +54,6 @@ class Project extends Component {
                   yields direct economic and scheduling advantages that profit
                   our clients.
                 </p>
-                <br></br> */}
               </div>
             </div>
 

@@ -36,9 +36,9 @@ function Home(props) {
     <React.Fragment>
       {/* Jumbotron */}
       <Jumbotron>
-        <div className="container h-100">
-          <div className="row h-100 align-items-start justify-content-start text-left">
-            <div className="col-lg-10 align-self-end">
+        <div className="row h-125">
+          <div className="h-50 offset-md-3 col-md-6 my-auto jumboback">
+            {/* <div className="col-lg-10 align-self-end">
               <h1 className="text-uppercase text-white font-weight-bold">
                 Liscensed General Contractor in California
               </h1>
@@ -48,6 +48,13 @@ function Home(props) {
               <a className="btn btn-light btn-lg" href="/about">
                 Find Out More
               </a>
+            </div> */}
+          </div>
+          <div className="container h-20">
+            <div className="row">
+              <p className="text-center offset-7 offset-md-10 col-md-2 setext-uppercase text-white font-weight-bold">
+                proverbs 16:2
+              </p>
             </div>
           </div>
         </div>
@@ -69,15 +76,11 @@ function Home(props) {
             </div>
 
             <div className="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
-              <img
-                src="assets/images/sdvosb.png"
-                className="img-fluid"
-                alt=""
-              />
+              <img src="assets/images/CVE2.png" className="img-fluid" alt="" />
             </div>
 
             <div className="col-lg-3 col-md-3 col-6 d-flex align-items-center justify-content-center">
-              <img src="assets/images/badge.png" className="img-fluid" alt="" />
+              <img src="assets/images/mbe.png" className="img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -242,10 +245,11 @@ function Home(props) {
             <h2>Projects</h2>
             <hr className="divider my-4" />
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Trutec Engineering Inc believes that the quality of a project is
+              dependent upon our ability to lead construction process in an
+              appropriate, timely manner with client’s goals. We know from our
+              experiences that a good construction performance yields direct
+              economic and scheduling advantages that profit our clients.
             </p>
           </div>
 

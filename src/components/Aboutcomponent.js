@@ -11,7 +11,16 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="jumbotron-sm">
+        <div
+          class="jumbotron-sm"
+          style={{
+            background: `linear-gradient(
+        to bottom,
+        rgba(57, 57, 58, 0.466) 0%,
+        rgba(165, 165, 170, 0.63) 100%
+      ),url("assets/images/abouttop.png")`,
+          }}
+        >
           <div class="container h-100">
             <div class="row h-100 align-self-center text-center d-flex align-items-center">
               <div class="col-lg-12">
@@ -48,9 +57,10 @@ class About extends Component {
                 </p>
                 <br></br>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <img
-                  src="assets/images/remodel.jpg"
+                  className="rad"
+                  src="assets/images/bojung.jpg"
                   width="100%"
                   height="100%"
                 />
@@ -205,14 +215,21 @@ class About extends Component {
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 mt-3">
-                <img src="assets/images/badge.png" width="70%" height="70%" />
+              <div class="col-6 col-md-3 mt-3">
+                <img src="assets/images/ca_logo.png" width="70%" height="70%" />
               </div>
-              <div class="col-md-4 mt-3">
+              <div class="col-6 col-md-3 mt-3">
                 <img src="assets/images/dv.png" width="70%" height="70%" />
               </div>
-              <div class="col-md-4 mt-3">
-                <img src="assets/images/sdvosb.png" width="67%" height="70%" />
+              <div class="col-6 col-md-3 mt-3">
+                <img
+                  src="assets/images/sdvosb_white.jpeg"
+                  width="67%"
+                  height="70%"
+                />
+              </div>
+              <div class="col-6 col-md-3 mt-3">
+                <img src="assets/images/mbe.png" width="67%" height="70%" />
               </div>
             </div>
           </div>

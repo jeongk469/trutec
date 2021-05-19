@@ -45,7 +45,16 @@ const Testimonial = (props) => {
 
   return (
     <React.Fragment>
-      <div class="jumbotron-sm">
+      <div
+        class="jumbotron-sm"
+        style={{
+          background: `linear-gradient(
+          to bottom,
+          rgba(57, 57, 58, 0.466) 0%,
+          rgba(165, 165, 170, 0.63) 100%
+        ),url("assets/images/client_jumbo.PNG")`,
+        }}
+      >
         {/* <div class="container h-100"> */}
         <div class="row h-100 align-self-center text-center d-flex align-items-center">
           <div class="col-lg-12">

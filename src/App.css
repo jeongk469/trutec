@@ -138,23 +138,44 @@ address {
 
 /*--------------------------------------------------------------
 # Jumbotron
+
+linear-gradient(
+      to bottom,
+      rgba(57, 57, 58, 0.466) 0%,
+      rgba(165, 165, 170, 0.63) 100%
+    ),
 --------------------------------------------------------------*/
 
 .jumbotron {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(
-      to bottom,
-      rgba(57, 57, 58, 0.466) 0%,
-      rgba(165, 165, 170, 0.63) 100%
-    ),
-    url("images/jumbo.jpg");
+  background: black;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   border-radius: 0;
   margin-bottom: 0;
+}
+
+.jumboback {
+  background: url("images/trutec123.jpeg") !important;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: cover !important;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.h-20 {
+  height: 20% !important;
+}
+
+.h-125 {
+  height: 125% !important;
 }
 
 .white-bg {
@@ -186,16 +207,10 @@ address {
 .jumbotron-sm {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(
-      to bottom,
-      rgba(57, 57, 58, 0.466) 0%,
-      rgba(165, 165, 170, 0.63) 100%
-    ),
-    url("images/contact.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-size: cover !important;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -556,4 +571,8 @@ ul {
   text-align: left;
   padding-left: 0;
   margin-left: 10%;
+}
+
+.rad {
+  border-radius: 0.3rem !important;
 }
